@@ -1,0 +1,291 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+.btnGame {
+  color: white;
+  background-color: rgb(75, 75, 119);
+  font-size: larger;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.game_a {
+  flex-grow: 1;
+}
+
+.game_b {
+  width: 50vw;
+  height: 8vh;
+  background-color: rgb(111, 111, 176);
+}
+
+.title {
+  background-color: rgb(75, 75, 119);
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-weight: lighter;
+  font-size: larger;
+  height: 5vh;
+}
+
+.textArea {
+  height: 50vh;
+  border: solid black 1px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.toolbar {
+  background: rgb(164, 209, 223);
+  text-align: center;
+}
+
+.tools {
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.bo {
+  font-weight: bolder;
+}
+
+.un {
+  text-decoration: underline;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 8px;
+  background: rgba(173, 216, 230, 0.568);
+}
+
+.keyboard button {
+  height: 45px;
+  cursor: pointer;
+  font-size: large;
+  background-color: rgb(255, 249, 249);
+  border: 1px solid grey;
+  border-radius: 7px;
+}
+
+.space {
+  grid-column: span 7;
+}
+
+.get100Title {
+  display: flex;
+  flex-direction: row;
+  height: 7vh;
+  justify-content: center;
+  padding: 5px;
+}
+
+.get100Title h2 {
+  font-size: 35px;
+  padding-right: 30px;
+}
+
+
+.btnGameStatus {
+  border-radius: 20px;
+  width: 10vw;
+  height: 5vh;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  cursor: pointer;
+}
+
+.get100Game {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.divAddUser {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.divAddUser label {
+  color: gray;
+  margin-bottom: 5px;
+}
+
+.divAddUser input {
+  border-radius: 5px;
+  border: rgb(75, 75, 119) 2px solid;
+  width: 30vw;
+  height: 35px;
+}
+
+.btnAddUser {
+  color: white;
+  background-color: rgb(45, 45, 122);
+  border-radius: 25px;
+  height: 40px;
+  width: 120px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.btnAddUser:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.btnShowNum {
+  color: white;
+  background-color: rgb(45, 45, 122);
+  border-radius: 15px;
+  opacity: 0.7;
+  width: 40px;
+}
+
+.divAddUser p {
+  font-size: larger;
+  margin: 10px;
+}
+
+.gameScreen {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.usersDetailsArea {
+  width: 25vw;
+}
+
+.usersDetailsArea h1 {
+  color: rgb(29, 29, 118);
+  font-weight: 400;
+}
+
+.divWinners {
+  border: 1px solid rgb(29, 29, 118);
+  width: 15vw;
+  border-radius: 15px;
+  text-align: center;
+  background-color: rgba(115, 115, 123, 0.14);
+}
+
+.cardsArea {
+  flex-grow: 1;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: solid 2px rgb(29, 29, 118);
+  border-radius: 10px;
+  width: 250px;
+  height: 280px;
+  text-align: center;
+  border: grey 2px solid;
+  box-shadow: 2px 2px 2px 0 grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+
+.card.disabled {
+  background-color: grey;
+  opacity: 0.3;
+}
+
+.nameCard {
+  color: rgb(29, 29, 118);
+  font-size: x-large;
+  margin-bottom: 5px;
+}
+
+.numberCard {
+  width: 220px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: rgb(29, 29, 118);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  margin: 15px;
+}
+
+.card.disabled .numberCard {
+  background-color: rgb(79, 79, 79);
+}
+
+.buttonsMath {
+  flex-direction: column;
+}
+
+.btnMathOperation {
+  cursor: pointer;
+  background-color: rgb(29, 29, 118);
+  color: white;
+  font-weight: bold;
+  margin: 6px;
+  border-radius: 15px;
+  width: 2.8vw;
+  height: 4vh;
+}
+
+.card.disabled .btnMathOperation {
+  display: none;
+}
+
+.card .star{
+  display: none;
+}
+
+.footerCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.btnLeave {
+  color: white;
+  background-color: rgb(29, 29, 118);
+  border-radius: 25px;
+  height: 4vh;
+  margin-left: 102px;
+}
+
+.card.disabled .btnLeave {
+  background-color: grey;
+  background-color: (79, 79, 79);
+}
+
+.card.win .btnMathOperation {
+  display: none;
+}
+
+.card.win .star {
+  display: block;
+  color:yellow ;
+  width: 60px;
+  margin: 0;
+}
+
+.card.win {
+  border: 3px blue solid;
+
+}
